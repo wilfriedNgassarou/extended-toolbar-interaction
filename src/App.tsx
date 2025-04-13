@@ -1,11 +1,13 @@
 import { motion } from "motion/react"
 import { useState } from "react"
+import { Credits } from "./components/credits"
 
 function App() {
   const [hasTranslation, setHasTranslation] = useState(false)
 
   return (
     <section className="w-full h-dvh flex justify-center items-center">
+      <Credits />
       <div className="w-60 h-14 rounded-full bg-gray-200 overflow-hidden">
         <motion.div 
           className="w-[200%] h-full grid grid-cols-2"
